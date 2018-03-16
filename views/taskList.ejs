@@ -1,0 +1,29 @@
+<table class="table table-hover">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Description</th>
+        <th scope="col">Amount</th>
+        <th scope="col">Created Date</th>
+        <th scope="col">Updated Date</th>
+        <th scope="col">View</th>
+        <th scope="col">Update</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% if(data.length>0){
+        for(var i=0; i<data.length; i++){ %>
+            <tr>
+                <td><%= data[i].name%></td>
+                <td><%= data[i].description%></td>
+                <td><%= data[i].amount%></td>
+                <td><%= data[i].created%></td>
+                <td><%= data[i].updated%></td>
+                <td data-id="<%= data[i]._id%>" class="edit"><span class="glyphicon glyphicon-eye-open"></span></td>
+                <td data-id="<%= data[i]._id%>" class="update"><span class="glyphicon glyphicon-log-out"></span></td>
+                <td data-id="<%= data[i]._id%>" class="delete"><span class="glyphicon glyphicon-trash"></span></td>
+              </tr>
+      <% } } %>
+    </tbody>
+  </table>

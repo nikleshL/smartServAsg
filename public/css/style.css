@@ -1,0 +1,18 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.page-header {
+  text-align: center;
+}
+
+#viewTask label {
+  width: 90px;
+}
+#viewTask span {
+  font-weight: bold;
+}
