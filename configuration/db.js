@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 
 //var DBURI = "mongodb://localhost:27017/expMang";
 
-var DBURI = "mongodb://nikleshlonare:nl2121990@ds155727.mlab.com:55727/smartserv";
+var DBURI = "mongodb://test:test@ds155727.mlab.com:55727/smartserv";
 
 mongoose.connect(DBURI,function(error){
 	if(error){
